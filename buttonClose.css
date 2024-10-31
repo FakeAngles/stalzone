@@ -1,0 +1,2 @@
+.buttonClose {-fx-background-image: url("/images/buttonClose.png")}
+.buttonClose:hover {-fx-background-image: url("/images/buttonCloseHover.png")}

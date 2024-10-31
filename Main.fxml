@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane" prefHeight="754.0" prefWidth="1257.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.amaz1ng.launcher.gui.controllers.GuiMainController">
+   <children>
+      <ImageView fitHeight="754.0" fitWidth="1257.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/bg.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="play" layoutX="137.0" layoutY="449.0" mnemonicParsing="false" onAction="#playAction" prefHeight="70.0" prefWidth="288.0" style="-fx-background-color: #5B774E;" styleClass="play_button" stylesheets="@play_button.css" text="Исследовать" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow offsetY="8.0" radius="14.75" width="40.0">
+               <color>
+                  <Color red="0.35573333501815796" green="0.46000000834465027" blue="0.303600013256073" opacity="0.6000000238418579" />
+               </color>
+            </DropShadow>
+         </effect></Button>
+      <Button id="settings" fx:id="settings" layoutX="297.0" layoutY="223.0" mnemonicParsing="false" onAction="#settingsAction" prefHeight="27.0" prefWidth="116.0" styleClass="settings" stylesheets="@button.css" text="Настройки" visible="false" />
+      <Label fx:id="welcome" prefHeight="17.0" prefWidth="203.0" />
+      <ImageView id="buttonClose" fx:id="buttonClose" fitHeight="51.0" fitWidth="28.0" layoutX="1209.0" layoutY="16.0" onMouseClicked="#onButtonClose" onMouseEntered="#onButtonEntered" onMouseExited="#onButtonExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/buttonClose.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Button fx:id="checkClient" alignment="CENTER" layoutX="137.0" layoutY="543.0" mnemonicParsing="false" onAction="#checkClientAction" prefHeight="48.0" prefWidth="288.0" style="-fx-background-color: #252525;" styleClass="sync_button" stylesheets="@sync_button.css" text="Проверка файлов" textFill="#9a9a9a">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <ImageView layoutX="204.0" layoutY="555.0">
+         <image>
+            <Image url="@images/sync-outline.png" />
+         </image>
+      </ImageView>
+      <ImageView id="buttonClose" fx:id="logout" fitHeight="51.0" fitWidth="28.0" layoutX="1161.0" layoutY="16.0" onMouseClicked="#logoutAction" onMouseEntered="#onButtonLogoutEntered" onMouseExited="#onButtonLogoutExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/buttonLogout.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</Pane>

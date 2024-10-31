@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.amaz1ng.launcher.gui.controllers.GuiDebugController">
+   <children>
+      <AnchorPane prefHeight="256.0" prefWidth="512.0">
+         <children>
+            <TextArea fx:id="logArea" layoutX="43.0" layoutY="14.0" prefHeight="192.0" prefWidth="427.0" />
+            <Button fx:id="closeGame" layoutX="178.0" layoutY="217.0" mnemonicParsing="false" onAction="#closeGameAction" prefHeight="25.0" prefWidth="158.0" text="Закрыть игру" />
+            <Pane prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

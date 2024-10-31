@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="pane" prefHeight="754.0" prefWidth="1257.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.amaz1ng.launcher.gui.controllers.IIIiIIiiiIiIIIiiiIIIiiIiIIIiiiIIIiIIIIiiiIiiiiiiIiiiiiIiiiIiiIII">
+   <children>
+      <Label fx:id="welcome" prefHeight="17.0" prefWidth="203.0">
+         <graphic>
+            <ImageView fitHeight="754.0" fitWidth="1257.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/bg.png" />
+               </image>
+            </ImageView>
+         </graphic></Label>
+      <ImageView id="buttonClose" fx:id="buttonClose" fitHeight="51.0" fitWidth="28.0" layoutX="1209.0" layoutY="16.0" onMouseClicked="#onButtonClose" onMouseEntered="#onButtonEntered" onMouseExited="#onButtonExited" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/buttonClose.png" />
+         </image>
+      </ImageView>
+      <ProgressBar id="progress" fx:id="bar" layoutX="137.0" layoutY="583.0" prefHeight="16.0" prefWidth="367.0" progress="0.24" style="-fx-accent: #5B774E; -fx-control-inner-background: #282828; -fx-text-box-border: #282828;" />
+      <Label fx:id="status" layoutX="137.0" layoutY="546.0" prefHeight="17.0" prefWidth="135.0" text="1" textFill="WHITE" />
+      <Label fx:id="download" alignment="CENTER_RIGHT" layoutX="350.0" layoutY="546.0" prefHeight="17.0" prefWidth="152.0" text="2" textFill="WHITE" />
+   </children>
+</Pane>

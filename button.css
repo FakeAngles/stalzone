@@ -1,0 +1,2 @@
+.settings {-fx-background-image: url("/images/settings.png")}
+.settings:hover {-fx-background-image: url("/images/settings_hover.png")}

@@ -1,0 +1,6 @@
+.sync_button:hover {
+    -fx-background-color: 2F2F2F;
+}
+.sync_button .text {
+    -fx-translate-x: 14px;
+}
